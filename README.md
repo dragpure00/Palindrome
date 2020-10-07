@@ -1,2 +1,2 @@
 # Palindrome-long-strings-
-Palindrome crated in Javascript
+Palindrome created in Javascript
