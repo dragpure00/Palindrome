@@ -1,25 +1,25 @@
 function palindrome(str) {
 
-var f= 0; //forward variable for displaying str forward. 0 assigned as the default value
-var b=str.length-1; //backward variable for displaying str backwards. str.length represent as the last letter in str
-    while(b>f){//if the value of the array matches any non word character then f increments and continues to next iteration
-  if(str[f].match(/[\W_]/))
+var f= 0; //this is variable is set to 0 and to be increment 
+var b=str.length-1; //this variable for str written in reverse.
+    while(b>f){// 
+  if(str[f].match(/[\W_]/))//loop to match non word characters
   {
     f++;
     continue;
   }
-if(str[b].match(/[\W_]/))//if the value of the array matches any non word character then b decrements and continues to the next ieration
+if(str[b].match(/[\W_]/))
 { 
     b--;
     continue;
 }
 
-if(str[f].toLowerCase()!==str[b].toLowerCase())// if str[f] does not equal str[b] (both lowercase) returns false 
+if(str[f].toLowerCase()!==str[b].toLowerCase())//loop to display palindrome
   return false;
 
   f++;
   b--;
-//otherwise program displays both f and b.
+
   }
   return true;
 }
