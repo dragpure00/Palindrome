@@ -1,5 +1,5 @@
-function palindrome(str) {// same method as you would check for long strings except using the replace method to replace any nonword charactter as space
-var p = str.replace(/[\W_]/gi,'').toLowerCase();//This is only useful if you want to check for short strings.
+function palindrome(str) {
+var p = str.replace(/[\W_]/gi,'').toLowerCase();// this is get rid of any nonword char and replace with space
 var forward=0;
 var back = p.length-1;
   while(back>forward){
@@ -11,3 +11,4 @@ var back = p.length-1;
     }
   return true;
 }
+//same method of finding palindrome except its useful for short strings
