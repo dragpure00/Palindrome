@@ -1,5 +1,5 @@
 function palindrome(str) {
-var p = str.replace(/[\W_]/gi,'').toLowerCase();// this is get rid of any nonword char and replace with space
+var p = str.replace(/[\W_]/gi,'').toLowerCase();
 var forward=0;
 var back = p.length-1;
   while(back>forward){
